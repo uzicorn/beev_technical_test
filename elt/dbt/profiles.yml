@@ -1,0 +1,13 @@
+beev:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('host') }}"
+      user: "{{ env_var('user') }}"
+      password: "{{ env_var('pass') }}"
+      port: "{{ env_var('port')| int }}"
+      dbname: "{{ env_var('db_name') }}"
+      schema: "{{ env_var('schema') }}"
+      threads: 1
+

@@ -1,0 +1,824 @@
+[0m10:34:03.569329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105529f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10682ee50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10685b130>]}
+
+
+============================== 10:34:03.570859 | e07e867e-ca65-4f0a-b0a4-8bef9bf9eba5 ==============================
+[0m10:34:03.570859 [info ] [MainThread]: Running with dbt=1.5.4
+[0m10:34:03.571290 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/salimzenini/.dbt', 'log_format': 'default', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'no_print': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'printer_width': '80', 'quiet': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'target_path': 'None', 'debug': 'False', 'introspect': 'True', 'version_check': 'True'}
+[0m10:34:03.571610 [info ] [MainThread]: dbt version: 1.5.4
+[0m10:34:03.571932 [info ] [MainThread]: python version: 3.9.18
+[0m10:34:03.572179 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m10:34:03.572419 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m10:34:03.572659 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/.dbt/profiles.yml
+[0m10:34:03.572902 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m10:34:03.573145 [info ] [MainThread]: Configuration:
+[0m10:34:03.573408 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m10:34:03.583402 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m10:34:03.583712 [info ] [MainThread]: Required dependencies:
+[0m10:34:03.584031 [debug] [MainThread]: Executing "git --help"
+[0m10:34:03.596613 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:34:03.597109 [debug] [MainThread]: STDERR: "b''"
+[0m10:34:03.597323 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:34:03.597631 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:34:03.597887 [info ] [MainThread]: dbt looked for a profiles.yml file in /Users/salimzenini/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:34:03.598146 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  at path ['version']: 'version' is not valid under any of the given schemas
+
+Error encountered in /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+
+
+[0m10:34:03.598600 [debug] [MainThread]: Command `dbt debug` failed at 10:34:03.598495 after 0.05 seconds
+[0m10:34:03.598903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105529f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b2250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b2c40>]}
+[0m10:34:03.599192 [debug] [MainThread]: Flushing usage events
+[0m10:34:31.199351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1031d6850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044dabb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104514670>]}
+
+
+============================== 10:34:31.200803 | 50f4a236-ae0a-4ee0-b8e5-5aa141c12de9 ==============================
+[0m10:34:31.200803 [info ] [MainThread]: Running with dbt=1.5.4
+[0m10:34:31.201267 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'debug': 'False', 'use_colors': 'True', 'write_json': 'True', 'printer_width': '80', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'fail_fast': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'warn_error': 'None', 'quiet': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'no_print': 'None', 'target_path': 'None'}
+[0m10:34:31.201593 [info ] [MainThread]: dbt version: 1.5.4
+[0m10:34:31.201858 [info ] [MainThread]: python version: 3.9.18
+[0m10:34:31.202103 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m10:34:31.202347 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m10:34:31.202591 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m10:34:31.202831 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m10:34:31.203073 [info ] [MainThread]: Configuration:
+[0m10:34:31.264113 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:34:31.272501 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m10:34:31.272819 [info ] [MainThread]: Required dependencies:
+[0m10:34:31.273118 [debug] [MainThread]: Executing "git --help"
+[0m10:34:31.280507 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:34:31.281021 [debug] [MainThread]: STDERR: "b''"
+[0m10:34:31.281237 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:34:31.281523 [info ] [MainThread]: Connection:
+[0m10:34:31.281831 [info ] [MainThread]:   host: localhost
+[0m10:34:31.282079 [info ] [MainThread]:   port: 5432
+[0m10:34:31.282319 [info ] [MainThread]:   user: dbt_user_salim
+[0m10:34:31.282580 [info ] [MainThread]:   database: test_db
+[0m10:34:31.282825 [info ] [MainThread]:   schema: analytics
+[0m10:34:31.283079 [info ] [MainThread]:   search_path: None
+[0m10:34:31.283325 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:34:31.283653 [info ] [MainThread]:   sslmode: None
+[0m10:34:31.284517 [info ] [MainThread]: Registered adapter: postgres=1.5.4
+[0m10:34:31.293939 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:34:31.294508 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:34:31.294749 [debug] [MainThread]: On debug: select 1 as id
+[0m10:34:31.294987 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:34:31.325067 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "dbt_user_salim"
+
+[0m10:34:31.334575 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m10:34:31.334805 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m10:34:31.335037 [debug] [MainThread]: On debug: No close available on handle
+[0m10:34:31.335259 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m10:34:31.335556 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:34:31.335820 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  at path ['version']: 'version' is not valid under any of the given schemas
+
+Error encountered in /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+
+
+[0m10:34:31.336088 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "dbt_user_salim"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:34:31.336548 [debug] [MainThread]: Command `dbt debug` failed at 10:34:31.336459 after 0.15 seconds
+[0m10:34:31.336795 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:34:31.337048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1031d6850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10474a490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10474a070>]}
+[0m10:34:31.337380 [debug] [MainThread]: Flushing usage events
+[0m10:36:26.501442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10454eeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f76b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fac5b0>]}
+
+
+============================== 10:36:26.502852 | 0f8b5e96-66b0-47a4-8eb4-14dbe0669d10 ==============================
+[0m10:36:26.502852 [info ] [MainThread]: Running with dbt=1.5.4
+[0m10:36:26.503315 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'no_print': 'None', 'log_format': 'default', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'target_path': 'None', 'debug': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'partial_parse': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'use_colors': 'True', 'static_parser': 'True', 'indirect_selection': 'eager'}
+[0m10:36:26.503642 [info ] [MainThread]: dbt version: 1.5.4
+[0m10:36:26.503902 [info ] [MainThread]: python version: 3.9.18
+[0m10:36:26.504145 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m10:36:26.504386 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m10:36:26.504634 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m10:36:26.504882 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m10:36:26.505125 [info ] [MainThread]: Configuration:
+[0m10:36:26.528844 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:36:26.539894 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:36:26.540200 [info ] [MainThread]: Required dependencies:
+[0m10:36:26.540501 [debug] [MainThread]: Executing "git --help"
+[0m10:36:26.547831 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:36:26.548366 [debug] [MainThread]: STDERR: "b''"
+[0m10:36:26.548587 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:36:26.548883 [info ] [MainThread]: Connection:
+[0m10:36:26.549222 [info ] [MainThread]:   host: localhost
+[0m10:36:26.549480 [info ] [MainThread]:   port: 5432
+[0m10:36:26.549731 [info ] [MainThread]:   user: dbt_user_salim
+[0m10:36:26.550002 [info ] [MainThread]:   database: test_db
+[0m10:36:26.550238 [info ] [MainThread]:   schema: analytics
+[0m10:36:26.550468 [info ] [MainThread]:   search_path: None
+[0m10:36:26.550699 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:36:26.550933 [info ] [MainThread]:   sslmode: None
+[0m10:36:26.551394 [info ] [MainThread]: Registered adapter: postgres=1.5.4
+[0m10:36:26.553750 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:36:26.554224 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:36:26.554439 [debug] [MainThread]: On debug: select 1 as id
+[0m10:36:26.554695 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:36:26.569381 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "dbt_user_salim"
+
+[0m10:36:26.578237 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m10:36:26.578465 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m10:36:26.578717 [debug] [MainThread]: On debug: No close available on handle
+[0m10:36:26.578938 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m10:36:26.579219 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:36:26.579498 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "dbt_user_salim"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:36:26.580055 [debug] [MainThread]: Command `dbt debug` failed at 10:36:26.579947 after 0.10 seconds
+[0m10:36:26.580350 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:36:26.580581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10454eeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107200850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071e2700>]}
+[0m10:36:26.580851 [debug] [MainThread]: Flushing usage events
+[0m10:39:35.179919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101e83eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048aab50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048e05b0>]}
+
+
+============================== 10:39:35.181374 | e748b875-3780-4030-9d7b-9789368f50c0 ==============================
+[0m10:39:35.181374 [info ] [MainThread]: Running with dbt=1.5.4
+[0m10:39:35.181854 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'quiet': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'introspect': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'target_path': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'log_cache_events': 'False', 'static_parser': 'True'}
+[0m10:39:35.182146 [info ] [MainThread]: dbt version: 1.5.4
+[0m10:39:35.182406 [info ] [MainThread]: python version: 3.9.18
+[0m10:39:35.182655 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m10:39:35.182895 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m10:39:35.183131 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m10:39:35.183368 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m10:39:35.183607 [info ] [MainThread]: Configuration:
+[0m10:39:35.206997 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:39:35.217948 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:39:35.218248 [info ] [MainThread]: Required dependencies:
+[0m10:39:35.218544 [debug] [MainThread]: Executing "git --help"
+[0m10:39:35.225803 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:39:35.226336 [debug] [MainThread]: STDERR: "b''"
+[0m10:39:35.226558 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:39:35.226868 [info ] [MainThread]: Connection:
+[0m10:39:35.227159 [info ] [MainThread]:   host: localhost
+[0m10:39:35.227470 [info ] [MainThread]:   port: 5432
+[0m10:39:35.227729 [info ] [MainThread]:   user: dbt_user_local
+[0m10:39:35.228000 [info ] [MainThread]:   database: test_db
+[0m10:39:35.228263 [info ] [MainThread]:   schema: analytics
+[0m10:39:35.228503 [info ] [MainThread]:   search_path: None
+[0m10:39:35.228739 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:39:35.228980 [info ] [MainThread]:   sslmode: None
+[0m10:39:35.229471 [info ] [MainThread]: Registered adapter: postgres=1.5.4
+[0m10:39:35.231883 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:39:35.232341 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:39:35.232580 [debug] [MainThread]: On debug: select 1 as id
+[0m10:39:35.232783 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:39:35.259233 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:39:35.260040 [debug] [MainThread]: On debug: Close
+[0m10:39:35.260271 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:39:35.260550 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:39:35.260995 [debug] [MainThread]: Command `dbt debug` succeeded at 10:39:35.260919 after 0.10 seconds
+[0m10:39:35.261202 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:39:35.261418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101e83eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b3d2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b3d610>]}
+[0m10:39:35.261696 [debug] [MainThread]: Flushing usage events
+[0m13:31:51.400423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f92cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bab50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f05b0>]}
+
+
+============================== 13:31:51.401986 | c031fc9e-d5b3-4094-a5d3-92531a2501a4 ==============================
+[0m13:31:51.401986 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:31:51.402459 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'version_check': 'True', 'log_format': 'default', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'static_parser': 'True', 'use_colors': 'True', 'debug': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'partial_parse': 'True', 'introspect': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'cache_selected_only': 'False'}
+[0m13:31:51.402806 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:31:51.403083 [info ] [MainThread]: python version: 3.9.18
+[0m13:31:51.403342 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:31:51.403608 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:31:51.403994 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:31:51.404337 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:31:51.404647 [info ] [MainThread]: Configuration:
+[0m13:31:51.432925 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:31:51.445962 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:31:51.446336 [info ] [MainThread]: Required dependencies:
+[0m13:31:51.446796 [debug] [MainThread]: Executing "git --help"
+[0m13:31:51.460938 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:31:51.461635 [debug] [MainThread]: STDERR: "b''"
+[0m13:31:51.461891 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:31:51.462214 [info ] [MainThread]: Connection:
+[0m13:31:51.462532 [info ] [MainThread]:   host: localhost
+[0m13:31:51.462875 [info ] [MainThread]:   port: 5432
+[0m13:31:51.463163 [info ] [MainThread]:   user: dbt_user_local
+[0m13:31:51.463498 [info ] [MainThread]:   database: test_db
+[0m13:31:51.463855 [info ] [MainThread]:   schema: analytics
+[0m13:31:51.464137 [info ] [MainThread]:   search_path: None
+[0m13:31:51.464431 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:31:51.464697 [info ] [MainThread]:   sslmode: None
+[0m13:31:51.465557 [info ] [MainThread]: Registered adapter: postgres=1.5.4
+[0m13:31:51.469715 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:31:51.470434 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:31:51.470680 [debug] [MainThread]: On debug: select 1 as id
+[0m13:31:51.470932 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:31:51.483511 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "test_db" does not exist
+
+[0m13:31:51.491209 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m13:31:51.491485 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m13:31:51.491737 [debug] [MainThread]: On debug: No close available on handle
+[0m13:31:51.491982 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:31:51.492276 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:31:51.492547 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "test_db" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:31:51.493120 [debug] [MainThread]: Command `dbt debug` failed at 13:31:51.493014 after 0.11 seconds
+[0m13:31:51.493413 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:31:51.493661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f92cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c45850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c26e80>]}
+[0m13:31:51.493971 [debug] [MainThread]: Flushing usage events
+[0m13:32:42.322184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1034a5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047aac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047e06a0>]}
+
+
+============================== 13:32:42.324062 | 8380f8af-8ead-4334-a26c-7c97bab2e7df ==============================
+[0m13:32:42.324062 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:32:42.324743 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'quiet': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'no_print': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'log_format': 'default', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'target_path': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'debug': 'False'}
+[0m13:32:42.325209 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:32:42.325658 [info ] [MainThread]: python version: 3.9.18
+[0m13:32:42.326015 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:32:42.326408 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:32:42.326718 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:32:42.327085 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:32:42.327437 [info ] [MainThread]: Configuration:
+[0m13:32:42.355155 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:32:42.368341 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:32:42.368672 [info ] [MainThread]: Required dependencies:
+[0m13:32:42.369227 [debug] [MainThread]: Executing "git --help"
+[0m13:32:42.378724 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:32:42.379372 [debug] [MainThread]: STDERR: "b''"
+[0m13:32:42.379618 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:32:42.379973 [info ] [MainThread]: Connection:
+[0m13:32:42.380314 [info ] [MainThread]:   host: localhost
+[0m13:32:42.380593 [info ] [MainThread]:   port: 5432
+[0m13:32:42.380864 [info ] [MainThread]:   user: dbt_user_local
+[0m13:32:42.381120 [info ] [MainThread]:   database: beev_local_warehouse
+[0m13:32:42.381398 [info ] [MainThread]:   schema: analytics
+[0m13:32:42.381637 [info ] [MainThread]:   search_path: None
+[0m13:32:42.381913 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:32:42.382157 [info ] [MainThread]:   sslmode: None
+[0m13:32:42.382649 [info ] [MainThread]: Registered adapter: postgres=1.5.4
+[0m13:32:42.385830 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:32:42.386577 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:32:42.386884 [debug] [MainThread]: On debug: select 1 as id
+[0m13:32:42.387271 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:32:42.405713 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m13:32:42.406886 [debug] [MainThread]: On debug: Close
+[0m13:32:42.407228 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:32:42.407699 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:32:42.408456 [debug] [MainThread]: Command `dbt debug` succeeded at 13:32:42.408304 after 0.11 seconds
+[0m13:32:42.408804 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:32:42.409452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1034a5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a35460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a35b20>]}
+[0m13:32:42.409895 [debug] [MainThread]: Flushing usage events
+[0m13:40:55.370933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071c9b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1206f4c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12072a8b0>]}
+
+
+============================== 13:40:55.372443 | de7bdbcf-2459-4b1a-8ffa-9e06eac31b9d ==============================
+[0m13:40:55.372443 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:40:55.373031 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'use_colors': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'version_check': 'True', 'quiet': 'False', 'log_format': 'default', 'printer_width': '80', 'use_experimental_parser': 'False', 'static_parser': 'True', 'write_json': 'True', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'log_cache_events': 'False', 'warn_error': 'None', 'introspect': 'True', 'no_print': 'None', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'partial_parse': 'True'}
+[0m13:40:55.373441 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:40:55.373893 [info ] [MainThread]: python version: 3.9.18
+[0m13:40:55.374294 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:40:55.374691 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:40:55.375082 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:40:55.375479 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:40:55.375852 [info ] [MainThread]: Configuration:
+[0m13:40:55.382358 [error] [MainThread]: Encountered an error:
+str expected, not Undefined
+[0m13:40:55.386390 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/main.py", line 417, in debug
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 110, in run
+    self.test_configuration()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 294, in test_configuration
+    profile_status = self._load_profile()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 254, in _load_profile
+    profile: Profile = Profile.render(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 436, in render
+    return cls.from_raw_profiles(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 345, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 308, in render_profile
+    profile_data = renderer.render_data(raw_profile_data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 49, in render_data
+    return deep_map_render(self.render_entry, data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 229, in deep_map_render
+    return _deep_map_render(func, value, ())
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in _deep_map_render
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in <dictcomp>
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 197, in _deep_map_render
+    ret = func(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 33, in render_entry
+    return self.render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 194, in render_value
+    raise ex
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 187, in render_value
+    rendered = super().render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 42, in render_value
+    return get_rendered(value, self.context, native=True)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    return render_template(template, ctx, node)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 546, in render_template
+    return template.render(ctx)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 187, in render
+    return self.environment.handle_exception()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 144, in quoted_native_concat
+    head = list(islice(nodes, 2))
+  File "<template>", line 1, in top-level template code
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/context/secret.py", line 33, in env_var
+    if var in os.environ and var.startswith(SECRET_ENV_PREFIX):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_collections_abc.py", line 769, in __contains__
+    self[key]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 676, in __getitem__
+    value = self._data[self.encodekey(key)]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 756, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not Undefined
+
+[0m13:40:55.443613 [debug] [MainThread]: Command `dbt debug` failed at 13:40:55.443421 after 0.09 seconds
+[0m13:40:55.444016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071c9b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120745d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120745cd0>]}
+[0m13:40:55.444380 [debug] [MainThread]: Flushing usage events
+[0m13:41:28.388932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c81b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f84c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fba880>]}
+
+
+============================== 13:41:28.390847 | 9f464aee-164c-44e7-8e2e-c7063fa7cad1 ==============================
+[0m13:41:28.390847 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:41:28.391460 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'partial_parse': 'True', 'static_parser': 'True', 'quiet': 'False', 'log_format': 'default', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'debug': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'log_cache_events': 'False', 'no_print': 'None', 'introspect': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'write_json': 'True', 'printer_width': '80', 'warn_error': 'None'}
+[0m13:41:28.391928 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:41:28.392371 [info ] [MainThread]: python version: 3.9.18
+[0m13:41:28.392749 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:41:28.393107 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:41:28.393494 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:41:28.393892 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:41:28.394245 [info ] [MainThread]: Configuration:
+[0m13:41:28.399551 [error] [MainThread]: Encountered an error:
+str expected, not Undefined
+[0m13:41:28.401169 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/main.py", line 417, in debug
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 110, in run
+    self.test_configuration()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 294, in test_configuration
+    profile_status = self._load_profile()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 254, in _load_profile
+    profile: Profile = Profile.render(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 436, in render
+    return cls.from_raw_profiles(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 345, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 308, in render_profile
+    profile_data = renderer.render_data(raw_profile_data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 49, in render_data
+    return deep_map_render(self.render_entry, data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 229, in deep_map_render
+    return _deep_map_render(func, value, ())
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in _deep_map_render
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in <dictcomp>
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 197, in _deep_map_render
+    ret = func(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 33, in render_entry
+    return self.render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 194, in render_value
+    raise ex
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 187, in render_value
+    rendered = super().render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 42, in render_value
+    return get_rendered(value, self.context, native=True)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    return render_template(template, ctx, node)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 546, in render_template
+    return template.render(ctx)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 187, in render
+    return self.environment.handle_exception()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 144, in quoted_native_concat
+    head = list(islice(nodes, 2))
+  File "<template>", line 1, in top-level template code
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/context/secret.py", line 33, in env_var
+    if var in os.environ and var.startswith(SECRET_ENV_PREFIX):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_collections_abc.py", line 769, in __contains__
+    self[key]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 676, in __getitem__
+    value = self._data[self.encodekey(key)]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 756, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not Undefined
+
+[0m13:41:28.409393 [debug] [MainThread]: Command `dbt debug` failed at 13:41:28.409232 after 0.04 seconds
+[0m13:41:28.409830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c81b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fd3f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fd3fd0>]}
+[0m13:41:28.410200 [debug] [MainThread]: Flushing usage events
+[0m13:41:51.209193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107601b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108904d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10893a880>]}
+
+
+============================== 13:41:51.210617 | 1819ad70-9672-4444-bb5c-8b7d7ba766d1 ==============================
+[0m13:41:51.210617 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:41:51.211067 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None', 'log_format': 'default', 'partial_parse': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'no_print': 'None', 'target_path': 'None', 'indirect_selection': 'eager', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'log_cache_events': 'False', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'quiet': 'False', 'write_json': 'True', 'debug': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True'}
+[0m13:41:51.211383 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:41:51.211662 [info ] [MainThread]: python version: 3.9.18
+[0m13:41:51.211925 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:41:51.212181 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:41:51.212435 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:41:51.212701 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:41:51.212963 [info ] [MainThread]: Configuration:
+[0m13:41:51.216787 [error] [MainThread]: Encountered an error:
+str expected, not Undefined
+[0m13:41:51.218013 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/main.py", line 417, in debug
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 110, in run
+    self.test_configuration()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 294, in test_configuration
+    profile_status = self._load_profile()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 254, in _load_profile
+    profile: Profile = Profile.render(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 436, in render
+    return cls.from_raw_profiles(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 345, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 308, in render_profile
+    profile_data = renderer.render_data(raw_profile_data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 49, in render_data
+    return deep_map_render(self.render_entry, data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 229, in deep_map_render
+    return _deep_map_render(func, value, ())
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in _deep_map_render
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in <dictcomp>
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 197, in _deep_map_render
+    ret = func(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 33, in render_entry
+    return self.render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 194, in render_value
+    raise ex
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 187, in render_value
+    rendered = super().render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 42, in render_value
+    return get_rendered(value, self.context, native=True)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    return render_template(template, ctx, node)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 546, in render_template
+    return template.render(ctx)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 187, in render
+    return self.environment.handle_exception()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 144, in quoted_native_concat
+    head = list(islice(nodes, 2))
+  File "<template>", line 1, in top-level template code
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/context/secret.py", line 33, in env_var
+    if var in os.environ and var.startswith(SECRET_ENV_PREFIX):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_collections_abc.py", line 769, in __contains__
+    self[key]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 676, in __getitem__
+    value = self._data[self.encodekey(key)]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 756, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not Undefined
+
+[0m13:41:51.222174 [debug] [MainThread]: Command `dbt debug` failed at 13:41:51.222072 after 0.03 seconds
+[0m13:41:51.222430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107601b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108955f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108955fd0>]}
+[0m13:41:51.222691 [debug] [MainThread]: Flushing usage events
+[0m13:46:54.988600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039a5b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ca8d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cde880>]}
+
+
+============================== 13:46:54.990312 | efd35ad5-9bbd-4e38-90ba-52ffc626569a ==============================
+[0m13:46:54.990312 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:46:54.990783 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'version_check': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'target_path': 'None', 'debug': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'quiet': 'False', 'static_parser': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager'}
+[0m13:46:54.991121 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:46:54.991400 [info ] [MainThread]: python version: 3.9.18
+[0m13:46:54.991669 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:46:54.991937 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:46:54.992197 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:46:54.992457 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:46:54.992712 [info ] [MainThread]: Configuration:
+[0m13:46:54.997488 [error] [MainThread]: Encountered an error:
+str expected, not Undefined
+[0m13:46:55.002386 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/main.py", line 417, in debug
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 110, in run
+    self.test_configuration()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 294, in test_configuration
+    profile_status = self._load_profile()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 254, in _load_profile
+    profile: Profile = Profile.render(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 436, in render
+    return cls.from_raw_profiles(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 345, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 308, in render_profile
+    profile_data = renderer.render_data(raw_profile_data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 49, in render_data
+    return deep_map_render(self.render_entry, data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 229, in deep_map_render
+    return _deep_map_render(func, value, ())
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in _deep_map_render
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in <dictcomp>
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 197, in _deep_map_render
+    ret = func(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 33, in render_entry
+    return self.render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 194, in render_value
+    raise ex
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 187, in render_value
+    rendered = super().render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 42, in render_value
+    return get_rendered(value, self.context, native=True)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    return render_template(template, ctx, node)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 546, in render_template
+    return template.render(ctx)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 187, in render
+    return self.environment.handle_exception()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 144, in quoted_native_concat
+    head = list(islice(nodes, 2))
+  File "<template>", line 1, in top-level template code
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/context/secret.py", line 33, in env_var
+    if var in os.environ and var.startswith(SECRET_ENV_PREFIX):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_collections_abc.py", line 769, in __contains__
+    self[key]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 676, in __getitem__
+    value = self._data[self.encodekey(key)]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 756, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not Undefined
+
+[0m13:46:55.009960 [debug] [MainThread]: Command `dbt debug` failed at 13:46:55.009861 after 0.04 seconds
+[0m13:46:55.010217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039a5b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf9f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf9fd0>]}
+[0m13:46:55.010592 [debug] [MainThread]: Flushing usage events
+[0m13:48:09.126217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10507db20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106380d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063b6880>]}
+
+
+============================== 13:48:09.128086 | 78ff50c3-d83f-4cc3-8c8d-7dab30fdd9a4 ==============================
+[0m13:48:09.128086 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:48:09.128800 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'debug': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'indirect_selection': 'eager', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'log_format': 'default', 'static_parser': 'True', 'quiet': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'introspect': 'True'}
+[0m13:48:09.129360 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:48:09.129683 [info ] [MainThread]: python version: 3.9.18
+[0m13:48:09.130181 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:48:09.130559 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:48:09.130943 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:48:09.131338 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:48:09.131699 [info ] [MainThread]: Configuration:
+[0m13:48:09.137758 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:48:09.153112 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:48:09.153549 [info ] [MainThread]: Required dependencies:
+[0m13:48:09.154016 [debug] [MainThread]: Executing "git --help"
+[0m13:48:09.162749 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:48:09.163338 [debug] [MainThread]: STDERR: "b''"
+[0m13:48:09.163614 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:48:09.164041 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:48:09.164416 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Compilation Error
+    Could not render {{ env_var(host) }: unexpected '}'
+      line 1
+        {{ env_var(host) }
+
+
+[0m13:48:09.165146 [debug] [MainThread]: Command `dbt debug` failed at 13:48:09.164987 after 0.06 seconds
+[0m13:48:09.165510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10507db20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063fdd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063fd6a0>]}
+[0m13:48:09.165864 [debug] [MainThread]: Flushing usage events
+[0m13:48:28.944495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc5910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082f4520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10832a7f0>]}
+
+
+============================== 13:48:28.945934 | a31a577b-007e-4195-bfd9-0da3c2bdec34 ==============================
+[0m13:48:28.945934 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:48:28.946388 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'log_format': 'default', 'use_colors': 'True', 'quiet': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'no_print': 'None', 'static_parser': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'debug': 'False', 'partial_parse': 'True', 'introspect': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'cache_selected_only': 'False'}
+[0m13:48:28.946696 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:48:28.946975 [info ] [MainThread]: python version: 3.9.18
+[0m13:48:28.947233 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:48:28.947484 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:48:28.947730 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:48:28.947984 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:48:28.948231 [info ] [MainThread]: Configuration:
+[0m13:48:28.952439 [error] [MainThread]: Encountered an error:
+str expected, not Undefined
+[0m13:48:28.953707 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/cli/main.py", line 417, in debug
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 110, in run
+    self.test_configuration()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 294, in test_configuration
+    profile_status = self._load_profile()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/task/debug.py", line 254, in _load_profile
+    profile: Profile = Profile.render(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 436, in render
+    return cls.from_raw_profiles(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 401, in from_raw_profiles
+    return cls.from_raw_profile_info(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 345, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/profile.py", line 308, in render_profile
+    profile_data = renderer.render_data(raw_profile_data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 49, in render_data
+    return deep_map_render(self.render_entry, data)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 229, in deep_map_render
+    return _deep_map_render(func, value, ())
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in _deep_map_render
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 195, in <dictcomp>
+    ret = {k: _deep_map_render(func, v, (keypath + (str(k),))) for k, v in value.items()}
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/utils.py", line 197, in _deep_map_render
+    ret = func(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 33, in render_entry
+    return self.render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 194, in render_value
+    raise ex
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 187, in render_value
+    rendered = super().render_value(value, keypath)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/config/renderer.py", line 42, in render_value
+    return get_rendered(value, self.context, native=True)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    return render_template(template, ctx, node)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 546, in render_template
+    return template.render(ctx)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 187, in render
+    return self.environment.handle_exception()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/clients/jinja.py", line 144, in quoted_native_concat
+    head = list(islice(nodes, 2))
+  File "<template>", line 1, in top-level template code
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/lib/python3.9/site-packages/dbt/context/secret.py", line 33, in env_var
+    if var in os.environ and var.startswith(SECRET_ENV_PREFIX):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_collections_abc.py", line 769, in __contains__
+    self[key]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 676, in __getitem__
+    value = self._data[self.encodekey(key)]
+  File "/opt/homebrew/Cellar/python@3.9/3.9.18/Frameworks/Python.framework/Versions/3.9/lib/python3.9/os.py", line 756, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not Undefined
+
+[0m13:48:28.958629 [debug] [MainThread]: Command `dbt debug` failed at 13:48:28.958522 after 0.03 seconds
+[0m13:48:28.958891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc5910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108343610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108343b20>]}
+[0m13:48:28.959144 [debug] [MainThread]: Flushing usage events
+[0m13:48:45.494392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fa1e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fa3850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fda8e0>]}
+
+
+============================== 13:48:45.496404 | 9bae652e-9949-4450-a9b5-ab0c6bd2b527 ==============================
+[0m13:48:45.496404 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:48:45.496987 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'use_colors': 'True', 'warn_error': 'None', 'debug': 'False', 'introspect': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'printer_width': '80', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'partial_parse': 'True', 'target_path': 'None', 'quiet': 'False'}
+[0m13:48:45.497409 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:48:45.497815 [info ] [MainThread]: python version: 3.9.18
+[0m13:48:45.498244 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:48:45.498568 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:48:45.498915 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:48:45.499218 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:48:45.499499 [info ] [MainThread]: Configuration:
+[0m13:48:45.530843 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:48:45.543167 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:48:45.543644 [info ] [MainThread]: Required dependencies:
+[0m13:48:45.544071 [debug] [MainThread]: Executing "git --help"
+[0m13:48:45.552068 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:48:45.552551 [debug] [MainThread]: STDERR: "b''"
+[0m13:48:45.552780 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:48:45.553070 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:48:45.553355 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "beev", target "dev" invalid: '5432' is not of type 'integer'
+
+
+[0m13:48:45.553892 [debug] [MainThread]: Command `dbt debug` failed at 13:48:45.553786 after 0.08 seconds
+[0m13:48:45.554197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fa1e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102431c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102435e0>]}
+[0m13:48:45.554498 [debug] [MainThread]: Flushing usage events
+[0m13:49:33.410211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d5dc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106164af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10619a820>]}
+
+
+============================== 13:49:33.411697 | 67e8bc1d-8397-4dcb-b0c9-e3ba56150eae ==============================
+[0m13:49:33.411697 [info ] [MainThread]: Running with dbt=1.5.4
+[0m13:49:33.412149 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'introspect': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'printer_width': '80', 'log_path': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'profiles_dir': '/Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt', 'partial_parse': 'True', 'write_json': 'True', 'static_parser': 'True', 'use_colors': 'True', 'quiet': 'False', 'fail_fast': 'False', 'debug': 'False', 'use_experimental_parser': 'False'}
+[0m13:49:33.412492 [info ] [MainThread]: dbt version: 1.5.4
+[0m13:49:33.412769 [info ] [MainThread]: python version: 3.9.18
+[0m13:49:33.413045 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-postgres/1.5.4/libexec/bin/python
+[0m13:49:33.413300 [info ] [MainThread]: os info: macOS-14.0-arm64-i386-64bit
+[0m13:49:33.413566 [info ] [MainThread]: Using profiles.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/profiles.yml
+[0m13:49:33.413842 [info ] [MainThread]: Using dbt_project.yml file at /Users/salimzenini/PycharmProjects/beev_technical_test/elt/dbt/dbt_project.yml
+[0m13:49:33.414093 [info ] [MainThread]: Configuration:
+[0m13:49:33.439250 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:49:33.450247 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:49:33.450592 [info ] [MainThread]: Required dependencies:
+[0m13:49:33.450900 [debug] [MainThread]: Executing "git --help"
+[0m13:49:33.458034 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:49:33.458551 [debug] [MainThread]: STDERR: "b''"
+[0m13:49:33.458792 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:49:33.459090 [info ] [MainThread]: Connection:
+[0m13:49:33.459395 [info ] [MainThread]:   host: localhost
+[0m13:49:33.459649 [info ] [MainThread]:   port: 5432
+[0m13:49:33.459899 [info ] [MainThread]:   user: dbt_user_local
+[0m13:49:33.460147 [info ] [MainThread]:   database: beev_local_warehouse
+[0m13:49:33.460395 [info ] [MainThread]:   schema: analytics
+[0m13:49:33.460641 [info ] [MainThread]:   search_path: None
+[0m13:49:33.460885 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:49:33.461130 [info ] [MainThread]:   sslmode: None
+[0m13:49:33.462550 [info ] [MainThread]: Registered adapter: postgres=1.5.4
+[0m13:49:33.465935 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:49:33.466415 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:49:33.466643 [debug] [MainThread]: On debug: select 1 as id
+[0m13:49:33.466927 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:49:33.485932 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m13:49:33.486832 [debug] [MainThread]: On debug: Close
+[0m13:49:33.487098 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:49:33.487401 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:49:33.487882 [debug] [MainThread]: Command `dbt debug` succeeded at 13:49:33.487808 after 0.09 seconds
+[0m13:49:33.488121 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:49:33.488359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d5dc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063f4cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063f4d60>]}
+[0m13:49:33.488656 [debug] [MainThread]: Flushing usage events
