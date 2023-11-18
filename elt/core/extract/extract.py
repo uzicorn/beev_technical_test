@@ -20,3 +20,4 @@ for source in ['car_data', 'consumer_data']:
         con=create_engine(db_connexion),
         schema='extract',
         if_exists='replace')
+print('hello')
