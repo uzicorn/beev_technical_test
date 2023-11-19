@@ -3,3 +3,4 @@
 elt/dbt/.user.yml
 logs/
 target/
+dbt_packages
