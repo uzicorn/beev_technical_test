@@ -8,13 +8,14 @@ db_connexion = os.environ['beev_db_connexion']
 
 
 for source in ['car_data', 'consumer_data']:
+    # load the source data into the temporary target
     source_id = os.environ[f'{source}_id']
     url = f'https://drive.google.com/uc?id={source_id}'
     response = requests.get(url)
-    with open('temp/temp.csv', 'wb') as f:
+    with open(f'{project_path}/elt/extract/temp/{source}.csv', 'wb') as f:
         f.write(response.content)
-    # load the source data into the database
-    df = pd.read_csv('temp/temp.csv')
+    # load the source data into the database target
+    df = pd.read_csv(f'{project_path}/elt/extract/temp/{source}.csv')
     df.to_sql(
         name=f'{source}',
         con=create_engine(db_connexion),
