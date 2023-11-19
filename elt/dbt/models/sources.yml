@@ -1,0 +1,7 @@
+sources:
+  - name: Gdrive
+    database: "{{ env_var('db_name') }}"
+    schema: extract
+    tables:
+      - name: car_data
+      - name: consumer_data

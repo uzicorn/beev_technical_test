@@ -1,3 +1,5 @@
 .idea/
 .env
 elt/dbt/.user.yml
+logs/
+target/
