@@ -6,7 +6,10 @@ profile: beev
 model-paths: ["models"]
 test-paths: ["tests"]
 
-
+models:
+  beev:
+    base:
+      +materialized: table
 
 
 
