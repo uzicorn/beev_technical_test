@@ -41,10 +41,10 @@
 ![](model.png)
 # DBT transformations
     # base models : 
-        write the models as they are extracted, with only renaling
+        write the extracted tables to the databaseas they are extracted, with only renaming
     # modelisation :
         - Data modelisation based (and limited) on the extracted data logic
-        - The logic is then persisted by dbt tests to unshure it'll stay the same 
+        - The logic is then persisted by dbt tests to unsure it'll stay the same 
           throughout the analysis
     # analysis :
         - Answer to the questions 
@@ -68,3 +68,5 @@
     Q4: average_car_cost_by_engine_type.sql
     Q5: average_rating_by_engine_type.sql
     Bonus : sales_by_engine_type.sql
+    
+    to display the graph : make graph

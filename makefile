@@ -26,5 +26,6 @@ execute_order_66:
 	make transform
 	make test
 
-graph
+graph:
+	python elt/visualisation/graph.py
 

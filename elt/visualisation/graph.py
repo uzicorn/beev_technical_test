@@ -1,3 +1,4 @@
+# Used this doc :  https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py
 import os
 import pandas as pd
 from sqlalchemy import create_engine
