@@ -12,7 +12,7 @@ renamed as (
         "Country"       as make,
         "Model"         as model,
         "index"         as country,
-        "Review Score"  as review_score,
+        "Review Score"::integer  as review_score,
         "Sales Volume"  as sales_volume
     from source
 
