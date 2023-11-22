@@ -5,6 +5,7 @@ import os
 
 project_path = os.environ['beev_project_path']
 db_connexion = os.environ['beev_db_connexion']
+db_connexion = os.environ['beev_db_connexion']
 
 
 for source in ['car_data', 'consumer_data']:
