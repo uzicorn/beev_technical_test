@@ -27,8 +27,7 @@
             pip freeze
         - delete_all_libraries: #caution
             pip freeze | xargs pip uninstall -y
-## Analysis 
-_these discussions have no place in a readme but rather in a notion document_ 
-### 1- Model
+
+### Model
 ![](model.png)
 

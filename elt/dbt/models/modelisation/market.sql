@@ -1,4 +1,4 @@
--- consumer_cata has model duplicate for each make, we chose the [make & model] relation from car_data as truth-base
+-- consumer_cata has model duplicate for each make, the truth-base for [make & model] is taken from the car_data
 select
     c.car_id,
     bc.country,
