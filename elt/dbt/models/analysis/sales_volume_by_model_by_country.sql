@@ -1,5 +1,5 @@
 -- Q1: Total number of cars by model by country
--- i assumed the question was about the sales volume as the actual 'numer' of cars by country is the same for all three countries
+-- i assumed the question was about the sales volume as the actual 'number' of cars by country is the same for all three countries
 select
 	c.model,
 	m.country,
