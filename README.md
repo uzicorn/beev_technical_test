@@ -37,6 +37,27 @@
 
     Environement variables
         - source the .env to your shell and python interpreter
+        - here are the .env variables :
+```
+#fill the "xxx" with your local config
+# Path to directory
+beev_project_path=xxx/PycharmProjects/beev_technical_test
+# Extract
+car_data_id=1jkMo41hKUV3mAE7yNvh31fBPNJqvQHGs
+consumer_data_id=1nL61PrMPcU8Z3-jqQW5gijWMSRs7cMCf
+beev_db_connexion=postgresql://dbt_user_local:admin@localhost/beev_local_warehouse
+# Docker
+container_name=local_warehouse
+POSTGRES_PASSWORD=admin
+# DBT profile
+dbt_profile_dir=${beev_project_path}/elt/dbt
+host=localhost
+user=dbt_user_local
+pass=admin
+port=5432
+db_name=beev_local_warehouse
+schema=analytics
+```
 ### Model
 ![](model.png)
 # DBT transformations
