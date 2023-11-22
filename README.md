@@ -62,7 +62,7 @@ schema=analytics
 ![](model.png)
 # DBT transformations
     # base models : 
-        write the extracted tables to the databaseas they are extracted, with only renaming
+        write the extracted tables to the database with only renaming
     # modelisation :
         - Data modelisation based (and limited) on the extracted data logic
         - The logic is then persisted by dbt tests to unsure it'll stay the same 
@@ -74,11 +74,11 @@ schema=analytics
     Execute the command -> make execute_order_66 
     in the root directory
     it will : 
-        - Restart the docker container 
+        - Launch and/or Restart the docker container 
             this will delete all the data. i chose not to
             alocate a volume to persist the data as it has 
             utility.
-        - Extract the data from the Google drive
+        - Extract the data from Google drive
         - Run DBT 
         - run DBT tests
     You will find the tables in the schema "analysis"
