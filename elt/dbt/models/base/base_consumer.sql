@@ -9,8 +9,9 @@ renamed as (
 
     select
         "Year"          as year,
+        "Country"       as make,
         "Model"         as model,
-        "Country"       as country,
+        "index"         as country,
         "Review Score"  as review_score,
         "Sales Volume"  as sales_volume
     from source

@@ -9,8 +9,8 @@ renamed as (
 
     select
         "Year"          as year,
+        "Make"          as make,
         "Model"         as model,
-        "Make"          as maker,
         "Engine Type"   as engine_type,
         "Price"         as price
     from source

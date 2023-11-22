@@ -1,4 +1,4 @@
-name: beev
+name: beev_technical_test
 config-version: 2
 version: '1.0.0'
 
@@ -7,10 +7,7 @@ model-paths: ["models"]
 test-paths: ["tests"]
 
 models:
-  beev:
-    base:
-      +materialized: table
-
+  +materialized: table
 
 
 
